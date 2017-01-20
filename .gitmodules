@@ -1,0 +1,3 @@
+[submodule "user/themes/couchadou-theme"]
+	path = user/themes/couchadou-theme
+	url = git@github.com:sylvestrelucia/couchadou-theme.git
