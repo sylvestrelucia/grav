@@ -1,0 +1,47 @@
+title: View
+'@extends': default
+
+form:
+  fields:
+    tabs:
+      fields:
+        view:
+          type: tab
+          title: View
+          fields:
+            basic:
+              type: section
+              title: Basic
+              underline: true
+              fields:
+                header.view.reference:
+                  type: pages
+                  label: Page
+                  help: Specify a page to retreive view collection
+                  show_root: true
+                header.view.filter:
+                  type: toggle
+                  label: Filter
+                  help: Only display results from the selected pages children
+                  default: 0
+                  options:
+                      1: Yes
+                      0: No
+                  validate:
+                      type: bool
+                header.view.template:
+                  type: text
+                  label: Modular Template
+                  placeholder: eg: partials/view
+                  help: Specify a template to use display view collection
+            advanced:
+              type: section
+              title: Advanced
+              underline: true
+              fields:
+                header.view.params:
+                  type: frontmatter
+                  label: Parameters
+                  default: false
+                  validate:
+                    type: ignore
