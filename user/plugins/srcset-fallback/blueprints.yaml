@@ -1,0 +1,36 @@
+name: Srcset Fallback
+version: 1.0.0
+description: Provides support for the srcset attribute for older browsers
+icon: picture-o
+author:
+  name: Gertt
+  email: gert@gert.gert
+  url: http://github.com/Gertt
+homepage: https://github.com/Gertt/grav-plugin-srcset-fallback
+keywords: srcset, plugin, fallback, polyfill, legacy, responsive, retina
+bugs: https://github.com/Gertt/grav-plugin-srcset-fallback/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    mode:
+      type: toggle
+      label: Plugin mode
+      default: passive
+      options:
+        passive: Passive
+        active: Active
+      validate:
+        type: string
+

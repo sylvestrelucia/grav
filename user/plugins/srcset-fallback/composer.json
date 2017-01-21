@@ -1,0 +1,18 @@
+{
+    "name": "gertt/grav-plugin-srcset-fallback",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gert",
+            "email": "gert@gert.gert"
+        }
+    ],
+    "require": {
+    	"wa72/htmlpagedom": "1.0.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gertt\\Grav\\Srcset\\": "src/"
+        }
+    }
+}

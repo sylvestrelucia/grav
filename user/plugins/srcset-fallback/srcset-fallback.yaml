@@ -1,0 +1,2 @@
+enabled: true
+mode: passive  # 'inactive' disables, 'passive' includes only Picturefill, 'active' optimizes HTML markup to prevent double image downloads
